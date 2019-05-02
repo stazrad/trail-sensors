@@ -23,6 +23,7 @@ GPIO.setmode(GPIO.BCM)
 channel = 17
 # Set the GPIO pin to an input
 GPIO.setup(channel, GPIO.IN)
+GPIO.setup(22, GPIO.IN)
 
 # This line tells our script to keep an eye on our gpio pin and let us know when the pin goes HIGH or LOW
 GPIO.add_event_detect(channel, GPIO.BOTH, bouncetime=300)
