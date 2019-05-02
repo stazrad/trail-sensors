@@ -10,7 +10,7 @@ print "file running!"
 # This is our callback function, this function will be called every time there is a change on the specified GPIO channel, in this example we are using 17
 
 def callback(channel):
-    print(GPIO)
+    print(GPIO.input(channel), GPIO.input(22))
     if GPIO.input(channel):
         print "LED off"
     else:
