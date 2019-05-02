@@ -5,6 +5,8 @@
 import RPi.GPIO as GPIO # This is the GPIO library we need to use the GPIO pins on the Raspberry Pi
 import time # This is the time library, we need this so we can use the sleep function
 
+print "file running!"
+
 # This is our callback function, this function will be called every time there is a change on the specified GPIO channel, in this example we are using 17
 
 def callback(channel):
