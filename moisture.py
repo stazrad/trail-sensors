@@ -10,9 +10,9 @@ import time # This is the time library, we need this so we can use the sleep fun
 def callback(channel):
     print(GPIO.input(channel))
     if GPIO.input(channel):
-		print "LED off"
-	else:
-		print "LED on"
+        print "LED off"
+    else:
+        print "LED on"
 
 # Set our GPIO numbering to BCM
 GPIO.setmode(GPIO.BCM)
@@ -29,5 +29,5 @@ GPIO.add_event_callback(channel, callback)
 
 # This is an infinte loop to keep our script running
 while True:
-	# This line simply tells our script to wait 0.1 of a second, this is so the script doesnt hog all of the CPU
-	time.sleep(0.1)
+    # This line simply tells our script to wait 0.1 of a second, this is so the script doesnt hog all of the CPU
+    time.sleep(0.1)
