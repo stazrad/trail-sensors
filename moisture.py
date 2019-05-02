@@ -12,6 +12,7 @@ def callback(channel):
 		print "LED off"
 	else:
 		print "LED on"
+    print GPIO.input(channel)
 
 # Set our GPIO numbering to BCM
 GPIO.setmode(GPIO.BCM)
